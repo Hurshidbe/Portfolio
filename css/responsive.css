@@ -1,0 +1,674 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Extra Large Devices (1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .section-title {
+    font-size: 3.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large Devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Medium Devices (992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hero-content {
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-content {
+    gap: 40px;
+  }
+
+  .contact-content {
+    gap: 40px;
+  }
+}
+
+/* Small Devices (768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 60px;
+    margin-right: 0;
+  }
+
+  .timeline-marker {
+    left: 30px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.98);
+    width: 100%;
+    text-align: center;
+    transition: var(--transition-fast);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    padding: 30px 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Extra Small Devices (576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 25px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  .timeline-marker {
+    left: 20px;
+  }
+
+  .code-animation {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Devices (up to 575px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Navigation */
+  .nav-container {
+    padding: 0 15px;
+  }
+
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 65px;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.98);
+    width: 100%;
+    text-align: center;
+    transition: var(--transition-fast);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    padding: 25px 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin: 12px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .bar {
+    width: 22px;
+    height: 2px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 80px 0 60px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .code-animation {
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Sections */
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .neon-line {
+    width: 80px;
+    margin-bottom: 40px;
+  }
+
+  /* About Section */
+  .about {
+    padding: 60px 0;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-placeholder {
+    font-size: 5rem;
+  }
+
+  /* Skills Section */
+  .skills {
+    padding: 60px 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .skill-title {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .skill-description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  /* Projects Section */
+  .projects {
+    padding: 60px 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-image {
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .project-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .project-tech {
+    gap: 8px;
+  }
+
+  .tech-tag {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+
+  /* Experience Section */
+  .experience {
+    padding: 60px 0;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    margin-right: 0;
+  }
+
+  .timeline-marker {
+    left: 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .timeline-company {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .timeline-date {
+    font-size: 0.8rem;
+  }
+
+  .timeline-description p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .timeline-achievements li {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 60px 0;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-details {
+    margin-bottom: 30px;
+  }
+
+  .contact-item {
+    margin-bottom: 20px;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+
+  .contact-label {
+    font-size: 0.8rem;
+  }
+
+  .contact-value {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  /* Form */
+  .form {
+    gap: 20px;
+  }
+
+  .form-input {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .form-label {
+    top: 12px;
+    left: 12px;
+    font-size: 0.9rem;
+  }
+
+  .form-input:focus + .form-label,
+  .form-input:valid + .form-label {
+    font-size: 0.75rem;
+    top: -8px;
+    left: 8px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Landscape Mobile Devices */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .experience,
+  .contact {
+    padding: 50px 0;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .neon-text,
+  .neon-btn,
+  .neon-card {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  /* Already using dark theme, but can add specific adjustments */
+  :root {
+    --primary-dark: #000000;
+    --secondary-dark: #111111;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .particles {
+    display: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .particles,
+  .hero-visual,
+  .social-links,
+  .contact-form {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .neon-text,
+  .section-title {
+    color: black;
+    text-shadow: none;
+  }
+
+  .neon-card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}

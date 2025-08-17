@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xurshidbek Egamberdiyev - Backend Developer</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500&family=Exo+2:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="neon-text">&lt;/Xurshid&gt;</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link neon-hover">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link neon-hover">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link neon-hover">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link neon-hover">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link neon-hover">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link neon-hover">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span
+                class="typing-text"
+                data-text="Hello, I'm Xurshidbek Egamberdiyev"
+              ></span>
+              <span class="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle neon-text">
+              Young and ambitious backend developer from Uzbekistan
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary neon-btn"
+                >View My Work</a
+              >
+              <a href="#contact" class="btn btn-secondary neon-btn"
+                >Get In Touch</a
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="code-animation">
+              <div class="code-line">
+                <span class="code-keyword">let</span>
+                <span class="code-variable">developer</span>
+                <span class="code-operator">=</span>
+                <span class="code-string">"junior"</span>
+                <span class="code-symbol">;</span>
+              </div>
+              <div class="code-line">
+                <span class="code-keyword">while</span>
+                <span class="code-bracket">(</span>
+                <span class="code-function">practiceDaily</span>
+                <span class="code-bracket">()</span>
+                <span class="code-bracket">)</span>
+                <span class="code-bracket">{</span>
+              </div>
+              <div class="code-line code-indent">
+                <span class="code-variable">developer</span>
+                <span class="code-operator">=</span>
+                <span class="code-string">"senior"</span>
+                <span class="code-symbol">;</span>
+              </div>
+              <div class="code-line">
+                <span class="code-bracket">}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="particles" id="particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title neon-text">About Me</h2>
+        <div class="neon-line"></div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              I'm a young and ambitious software developer focused on backend
+              and frontend development. Currently studying Computer Engineering
+              at Tashkent University of Information Technologies, Fergana Branch
+              with a state scholarship.
+            </p>
+            <p class="about-description">
+              I'm eager to contribute to real-world projects and continuously
+              improve my technical skills. A salary is not a priority for me -
+              what truly matters is working with a motivated and strong team,
+              and continuously improving my skills.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number neon-text" data-count="3">0</span>
+                <span class="stat-label">Real Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number neon-text" data-count="3">0</span>
+                <span class="stat-label">Months Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number neon-text" data-count="10">0</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-container neon-borde">
+              <div class="profile-placeholder">
+                <img
+                  style="width: 500px"
+                  src="images/me.png"
+                  alt="My Photo"
+                  class="profile-photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title neon-text">Technical Skills</h2>
+        <div class="neon-line"></div>
+        <div class="skills-grid">
+          <div class="skill-card neon-card">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h3 class="skill-title">JavaScript & TypeScript</h3>
+            <p class="skill-description">
+              JavaScript (ES6+), TypeScript for modern web development
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-card neon-card">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3 class="skill-title">Backend Frameworks</h3>
+            <p class="skill-description">
+              Node.js, Express.js, NestJS for server-side development
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-card neon-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-title">Databases</h3>
+            <p class="skill-description">
+              MongoDB, PostgreSQL, Mongoose ODM for data management
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-card neon-card">
+            <div class="skill-icon">
+              <i class="fab fa-docker"></i>
+            </div>
+            <h3 class="skill-title">DevOps & Version Control</h3>
+            <p class="skill-description">
+              Git, GitHub, Docker, DockerHub for deployment and collaboration
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar" data-width="70"></div>
+            </div>
+          </div>
+
+          <div class="skill-card neon-card">
+            <div class="skill-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3 class="skill-title">API & Cloud Services</h3>
+            <p class="skill-description">
+              RESTful API design, AWS-SDK3, Cloudinary integration
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-card neon-card">
+            <div class="skill-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3 class="skill-title">Tools & Automation</h3>
+            <p class="skill-description">
+              Postman, Swagger, Trello, Telegram Bot development
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar" data-width="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title neon-text">Featured Projects</h2>
+        <div class="neon-line"></div>
+        <div class="projects-grid">
+          <div class="project-card neon-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/hurshidbe"
+                    target="_blank"
+                    class="project-link neon-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/hurshidbe"
+                    target="_blank"
+                    class="project-link neon-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">HR Backend System</h3>
+              <p class="project-description">
+                Production-level employee management system API built
+                independently during internship. Features comprehensive HR
+                functionality with modern architecture.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card neon-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/hurshidbe"
+                    target="_blank"
+                    class="project-link neon-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/hurshidbe"
+                    target="_blank"
+                    class="project-link neon-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">afsonalar-erp-backend</h3>
+              <p class="project-description">
+                Gained hands-on experience in building real-world backend
+                projects and working with Docker during an internship at
+                Namangan Afsonalar Vodiysi, using modern technologies and
+                industry best practices
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Nestjs</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card neon-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/hurshidbe"
+                    target="_blank"
+                    class="project-link neon-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/hurshidbe"
+                    target="_blank"
+                    class="project-link neon-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Backend Project #2</h3>
+              <p class="project-description">
+                Second real-world project during internship, focusing on
+                scalable architecture and advanced backend development patterns.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title neon-text">Experience</h2>
+        <div class="neon-line"></div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker neon-marker"></div>
+            <div class="timeline-content neon-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Backend Developer (Intern)</h3>
+                <span class="timeline-company">Namangan Afsonalar Vodiysi</span>
+                <span class="timeline-date">April 2025 - July 2025</span>
+              </div>
+              <div class="timeline-description">
+                <p>
+                  Gained valuable hands-on experience in real-world backend
+                  development, working on production-level projects and learning
+                  industry best practices.
+                </p>
+                <ul class="timeline-achievements">
+                  <li>Participated in 2 real-world backend projects</li>
+                  <li>
+                    Independently built HR_backend - Employee management system
+                    API
+                  </li>
+                  <li>
+                    Used NestJS, PostgreSQL, JWT authentication, Docker for
+                    deployment
+                  </li>
+                  <li>
+                    Collaborated with experienced developers and learned team
+                    workflows
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker neon-marker"></div>
+            <div class="timeline-content neon-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Backend Node.js Student</h3>
+                <span class="timeline-company">Najot Ta'lim</span>
+                <span class="timeline-date">2024 - Present</span>
+              </div>
+              <div class="timeline-description">
+                <p>
+                  Currently studying Backend Node.js course with excellent
+                  academic performance, learning modern backend development
+                  practices and technologies.
+                </p>
+                <ul class="timeline-achievements">
+                  <li>Studying with good grades and consistent performance</li>
+                  <li>
+                    Mastering Node.js, Express.js, and database technologies
+                  </li>
+                  <li>
+                    Building practical projects and applying theoretical
+                    knowledge
+                  </li>
+                  <li>Learning industry-standard development practices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker neon-marker"></div>
+            <div class="timeline-content neon-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Computer Engineering Student</h3>
+                <span class="timeline-company">TUIT Fergana Branch</span>
+                <span class="timeline-date">2023 - Present</span>
+              </div>
+              <div class="timeline-description">
+                <p>
+                  Pursuing Bachelor's degree in Computer Engineering on state
+                  scholarship, building strong foundation in computer science
+                  and software development.
+                </p>
+                <ul class="timeline-achievements">
+                  <li>Awarded state scholarship for academic excellence</li>
+                  <li>
+                    Learning computer science fundamentals and programming
+                  </li>
+                  <li>
+                    Developing problem-solving and analytical thinking skills
+                  </li>
+                  <li>Participating in university projects and competitions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title neon-text">Get In Touch</h2>
+        <div class="neon-line"></div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Let's work together!</h3>
+            <p class="contact-description">
+              I'm eager to contribute to real-world projects and work with
+              motivated teams. Whether you have an opportunity or just want to
+              connect, feel free to reach out!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon neon-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">egamberdiyevx8@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon neon-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value">+998 93 945 34 05</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon neon-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Fergana, Uzbekistan</span>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/hurshidbe"
+                target="_blank"
+                class="social-link neon-btn"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="http://linkedin.com/in/hurshid-egamberdiyev-03339535b"
+                target="_blank"
+                class="social-link neon-btn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="mailto:egamberdiyevx8@gmail.com"
+                class="social-link neon-btn"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+998939453405" class="social-link neon-btn">
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form class="form" id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input neon-input"
+                  id="name"
+                  name="name"
+                  required
+                />
+                <label for="name" class="form-label">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input neon-input"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <label for="email" class="form-label">Your Email</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input neon-input"
+                  id="subject"
+                  name="subject"
+                  required
+                />
+                <label for="subject" class="form-label">Subject</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-input neon-input"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <label for="message" class="form-label">Your Message</label>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary neon-btn form-submit"
+              >
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading">
+                  <i class="fas fa-spinner fa-spin"></i>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">
+            &copy; 2024 Xurshidbek Egamberdiyev. Built with
+            <span class="neon-text">passion</span> and
+            <span class="neon-text">code</span>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+  </body>
+</html>
